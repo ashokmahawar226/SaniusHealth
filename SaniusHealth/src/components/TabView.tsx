@@ -1,9 +1,15 @@
 import React from "react"
 import { View } from "react-native"
 
-const TabView = ()=>{
+interface ITabView{
+    childreen?:React.ReactNode
+}
 
-    return <View style={{backgroundColor:"red",height:100,width:"100%"}}/>
+const TabView = (props:ITabView)=>{
+
+    return <View style={{backgroundColor:"red",height:100,width:"100%"}}>
+            {props.childreen}
+        </View>
 }
 
 export default TabView
