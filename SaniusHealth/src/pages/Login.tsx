@@ -23,7 +23,7 @@ const Login = ()=>{
     },[textVal])
     
     return <View style={styles.container}>
-        <TextInput maxLength={4} placeholder="Pin" value={textVal} onChangeText={setTextVal} />
+        <TextInput placeholderTextColor={"white"} maxLength={4} placeholder="Enter PIN here" style={styles.textInput} value={textVal} onChangeText={setTextVal} />
         {textVal.length>0 &&  <Text style={styles.errorMessage}>{LOGIN_ERROR}</Text>}
     </View>
 }
@@ -37,7 +37,15 @@ const styles = StyleSheet.create({
     },
     errorMessage : {
         color:"red"
-    }
+    },
+    textInput:{
+        backgroundColor:"gray",
+        paddingHorizontal:20,
+        color:"white",
+        height:40,
+        width:140
+
+    },
 })
 
 export default Login
