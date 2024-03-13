@@ -1,0 +1,1 @@
+export const  LOGIN_ERROR = "Plase enter correct PIN"
