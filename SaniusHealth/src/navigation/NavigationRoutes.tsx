@@ -4,6 +4,7 @@ import Dashboard from '../pages/Dashboard';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Login from '../pages/Login';
 import EditCell from '../pages/EditCell';
+import RearrangeBottomTab from '../pages/RearrangeBottomTab';
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Dashboard" component={Dashboard} />
             <Stack.Screen name="EditText" component={EditCell} />
+            <Stack.Screen name="RearrangeBottomTab" component={RearrangeBottomTab} />
 
             </Stack.Navigator>
         </NavigationContainer>

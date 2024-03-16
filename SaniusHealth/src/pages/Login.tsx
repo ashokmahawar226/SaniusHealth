@@ -18,7 +18,7 @@ const Login = ()=>{
         if(textVal==='1234'){
             storeLoginDetails(textVal)
             //@ts-ignore
-           navigate.replace("Dashboard",{})
+           navigate.replace("RearrangeBottomTab",{})
         }
     },[textVal])
     
